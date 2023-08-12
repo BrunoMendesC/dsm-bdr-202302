@@ -1,2 +1,2 @@
 # dsm-bdr-202302
-Repositório par a
+Repositório para aula de Banco de Dados Relacional
