@@ -1,0 +1,21 @@
+create database bd_sistema_bancario
+\c bd_sistema_bancario
+create table tabela1 (codigo integer);
+create table tabela2 (codigo boolean);
+create table tabela3 (codigo char);
+create table tabela4 (codigo real);
+create table tabela5 (codigo varchar);
+drop table tabelaAleatoria;
+CREATE TABLE cliente(NOME_CLIENTE varchar(50), CIDADE_CLIENTE varchar(50),
+ENDERECO_CLIENTE varchar(50));
+CREATE TABLE conta(NUMERO_CONTA integer, NOME_AGENCIA varchar(15),
+SALDO real);
+CREATE TABLE emprestimo(NUMERO_EMPRESTIMO integer, NOME_AGENCIA varchar(15),
+VALOR real);
+CREATE TABLE agencia(NOME_AGENCIA varchar(15),
+CIDADE_AGENCIA varchar(30), DEPOSITOS integer);
+
+alter table cliente add column idade integer;
+
+alter table cliente add column CPF integer;
+bd_sistema_bancario=# alter table cliente rename column idade to idades;
